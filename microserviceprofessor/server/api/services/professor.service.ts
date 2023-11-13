@@ -48,6 +48,7 @@ export class ProfessorService {
         const professorAntigo = listaProfessores[0];
 
         professorAntigo.nome = professor.nome;
+        professorAntigo.materia = professor.materia;
         await this.container.items.upsert(professorAntigo)
 
         return Promise.resolve(professorAntigo);

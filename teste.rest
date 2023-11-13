@@ -2,10 +2,19 @@
 GET http://localhost:3000/api/v1/professores
 
 ### Buscar professor pelo ID
-GET http://localhost:3000/api/v1/professores/0f8b495c-6be4-4854-a049-72cdbcfa22aa
+GET http://localhost:3000/api/v1/professores/03142934-b6a4-4576-b3a4-ea4166899570
 
 ### Inserir um novo professor
 POST http://localhost:3000/api/v1/professores
+Content-Type: application/json
+
+{
+  "nome": "João",
+  "materia": "Direção defensiva"
+}
+
+### Atualizar um professor
+PUT http://localhost:3000/api/v1/professores/b2efdc76-c124-4d97-b965-e696a3681f9e
 Content-Type: application/json
 
 {
@@ -13,14 +22,6 @@ Content-Type: application/json
   "materia": "Primeiros-socorros"
 }
 
-### Atualizar um professor
-PUT http://localhost:3000/api/v1/professores/0f8b495c-6be4-4854-a049-72cdbcfa22aa
-Content-Type: application/json
-
-{
-  "nome": "Gerson"
-}
-
 ### Remover um professor
-DELETE  http://localhost:3000/api/v1/professores/f7797cf6-8ff6-42bc-8896-975a341d1620
+DELETE  http://localhost:3000/api/v1/professores/03142934-b6a4-4576-b3a4-ea4166899570
 Content-Type: application/json
