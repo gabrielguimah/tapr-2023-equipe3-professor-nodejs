@@ -38,6 +38,12 @@ paths:
         200:
           description: Return all
           content: {}
+  /professores/event:
+    post:
+      responses:
+        200:
+          description: Return all
+          content: {}
   /examples:
     get:
       tags:
